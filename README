@@ -1,0 +1,8 @@
+# generate_bigdata.py
+# -------------------
+# My changes allow dsgen to produce sizable datasets that exceed memory 
+# constraints. It writes to records to disk, and generates a proportional 
+# number of duplicates at regular intervals of a million original records 
+# (approx 100mb). The catch is that the output is not randomly sorted 
+# even for small files. You should run another script if you need sorted data. 
+# -------------------
