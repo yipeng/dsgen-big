@@ -534,7 +534,7 @@ random.seed()
 # =============================================================================
 # Functions used by the main program come here
 
-def parseDuplicates(num_dup_records, org_rec, num_to_duplicate):
+def parse_duplicates(num_dup_records, org_rec, num_to_duplicate):
   dup_rec = {}  # Dictionary for duplicate records
   org_rec_used = {}  # Dictionary with record IDs of original records used to
                    # create duplicates
@@ -1884,7 +1884,7 @@ while (rec_cnt < num_org_records):
     print num_dup_records
     print 'num_to_duplicate'
     print num_to_duplicate
-    parseDuplicates(num_dup_records, org_rec, num_to_duplicate)
+    parse_duplicates(num_dup_records, org_rec, num_to_duplicate)
     org_rec.clear()
     all_rec_set.clear()
     rec_data.clear()
@@ -1913,6 +1913,7 @@ while (rec_cnt < num_dup_records):
 
   # Find an original record that has so far not been used to create - - - - - -
   # duplicates
+
   #
   if (rec_cnt>=num_org_records):
   # this will break the distribution because it is not expected behaviour in the original febrl this would have been an infinite loop ;) 
